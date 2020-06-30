@@ -1,0 +1,27 @@
+.example-tree-invisible {
+    display: none;
+  }
+  
+  .example-tree ul,
+  .example-tree li {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+  }
+.material-icons{
+    margin-right: 5px
+   
+
+}
+.mat-tree{
+    background: inherit;
+    padding-left: 30px;
+
+}
+.mat-tree-node li{
+    text-decoration-color: gray;
+
+
+
+}
+

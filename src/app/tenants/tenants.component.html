@@ -1,0 +1,102 @@
+<h1 class='dashboard'>Dashboard</h1>
+<mat-divider></mat-divider>
+<mat-grid-list cols = "4" rowHeight = "2:1" gutterSize="0px">
+  <mat-grid-tile 
+  [colspan] = "1"
+  [rowspan] = "1">
+  <mat-card class="inner-card">
+    <mat-card-title> <h3>Properties</h3></mat-card-title>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <h1 class='pvalue'>55</h1>
+    </mat-card-content>
+    <mat-card-footer>Total active Properties</mat-card-footer>
+
+  </mat-card>
+  </mat-grid-tile>
+   <mat-grid-tile 
+   [colspan] = "1"
+   [rowspan] = "1">
+   <mat-card class="inner-card">
+    <mat-card-title> 
+      <h3>Active Lease</h3>
+      </mat-card-title>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <h1 class='pvalue'>105</h1>
+    </mat-card-content>
+    <mat-card-footer>Total active Lease</mat-card-footer>
+  </mat-card>
+   </mat-grid-tile>
+   <mat-grid-tile 
+   [colspan] = "1"
+   [rowspan] = "1">
+   <mat-card class="inner-card">
+    <mat-card-title>
+      <h3>Ending Lease</h3>
+       </mat-card-title>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <h1 class='pvalue'>9</h1>
+    </mat-card-content>
+    <mat-card-footer>Ending leases >90</mat-card-footer>
+  </mat-card>
+   </mat-grid-tile>
+   <mat-grid-tile 
+   [colspan] = "1"
+   [rowspan] = "1">
+   <mat-card class="inner-card">
+    <mat-card-title> 
+      <h3>Delinquencies</h3>
+      </mat-card-title>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <h1 class='pvalue'>15</h1>
+    </mat-card-content>
+    <mat-card-footer>Total Tenant Delinquencies</mat-card-footer>
+  </mat-card>
+   </mat-grid-tile>
+   <mat-grid-tile 
+   [colspan] = "4"
+   [rowspan] = "1"
+   [style.height]='plotHeight'>
+   <mat-card class="inner-card">
+    <div class='total'>
+      <h1 class='earning'>$ 255,359.48<span class="material-icons">arrow_upward</span></h1>
+      <h3 class='h3class'>YTD EARNINGS</h3>
+      <h1 class='earning3'>$ 110,470.26<span class="material-icons">arrow_downward</span></h1>
+      <h3 class='h3class'>YTD EXPENSES</h3>
+      <h1 class='earning2'>$ 144,889.22<span class="material-icons">arrow_upward</span></h1>
+      <h3 class='h3class'>YTD REVENUE</h3>
+      
+    </div>
+    <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" xPosition="before">
+      <button mat-menu-item>Expand</button>
+      <button mat-menu-item>Remove</button>
+    </mat-menu>
+           <mat-card-content>
+             <h3>Income and Expenses Trend</h3>
+             <span><mat-divider></mat-divider></span>
+             <div id='chart'>
+               <apx-chart
+                 [series]="chartOptions.series"
+                 [chart]="chartOptions.chart"
+                 [dataLabels]="chartOptions.dataLabels"
+                 [plotOptions]="chartOptions.plotOptions"
+                 [yaxis]="chartOptions.yaxis"
+                 [legend]="chartOptions.legend"
+                 [fill]="chartOptions.fill"
+                 [stroke]="chartOptions.stroke"
+                 [tooltip]="chartOptions.tooltip"
+                 [xaxis]="chartOptions.xaxis"
+               ></apx-chart>
+             </div>
+          
+           </mat-card-content>
+     </mat-card>
+   </mat-grid-tile>
+</mat-grid-list>
+

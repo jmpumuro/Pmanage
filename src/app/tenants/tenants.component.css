@@ -1,0 +1,68 @@
+.dashboard{
+    margin-left: 20px;
+    margin-top: 12px;
+}
+.pvalue{
+    margin-left: 20px;
+    padding-top: 10px;
+    font-weight: 400;
+}
+.inner-card {
+    width: calc(100% - 70px);
+    height: calc(100% - 40px);
+    border-radius: 10px;
+
+    /*bottom: 15px;*/
+    
+  }
+  .mat-divider{
+      margin-top: -10px;
+      margin-bottom: 10px;
+  }
+  .mat-card-header{
+    font-weight: none;
+  }
+  .mat-card-title h3{
+      font-size: 20px;
+ 
+  }
+  .mat-card-content h1{
+      padding-top: 20px;
+      font-weight: none;
+      color:orange;
+  }
+  .mat-card-content span .mat-divider{
+      padding-bottom: 20px;
+  }
+  .mat-card-footer{
+      margin-left: 4px;
+  }
+#chart{
+    margin-top: 50px;
+}
+.total{
+    float:right;
+   position: relative;
+   margin-right: 200px;
+}
+.earning{
+    margin-top: 90px;
+}
+.earning3 span{
+    color:red;
+}
+.h3class{
+    margin-top: -15px;
+    margin-left: 22px;
+    padding-bottom: 30px;
+    opacity: 0.5;
+}
+.material-icons{
+    color:green;
+    
+}
+.more-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
